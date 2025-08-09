@@ -1,0 +1,64 @@
+.personagens-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.personagem-item {
+    background: #f5f5f5;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    min-width: 200px;
+    max-width: 300px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.personagem-imagem {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.personagem-item h3 {
+    color: #333;
+    margin: 10px 0;
+}
+
+.personagem-item p {
+    font-size: 18px;
+    color: #666;
+    margin: 10px 0;
+}
+
+.botao-votar {
+    background: #3d4146;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.botao-votar:hover {
+    background: #0056b3;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.zerar 
+{
+   /* deixar o botão funcional */
+}
