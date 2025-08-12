@@ -22,7 +22,7 @@ export class Personagem {
   }
 
   limparValores() {
-    this.personagens
+      
   }
  
 }

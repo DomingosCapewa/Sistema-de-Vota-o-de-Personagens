@@ -1,11 +1,15 @@
 <h1>Sistema de Votação de Personagens</h1>
 
-<div class="personagens-lista">
-  <div *ngFor="let personagem of personagens(); let i = index" class="personagem-item">
-    <img [src]="personagem.imagem" [alt]="personagem.nome" class="personagem-imagem">
-    <h3>{{ personagem.nome }}</h3>
-    <p>Votos: {{ personagem.votos }}</p>
-    <button (click)="votarPersonagem(i)" class="botao-votar">Votar</button>
-  </div>
+
+    @for (personagem of personagens(); track $index) {<div class="personagem-item">
+    <div class="personagens-lista">
+       <img [src]="personagem.imagem" [alt]="personagem.nome" class="personagem-imagem">
+       <h3>{{ personagem.nome }}</h3>
+       <p>Votos: {{ personagem.votos }}</p>
+        <button (click)="votarPersonagem($index)" class="botao-votar">Votar</button>  </div>
 </div>
+    }
+
+<div class="zerar">
 <button class="botao-votar" (click)="limparValores()">Zerar Votação</button>
+</div>
